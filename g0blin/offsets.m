@@ -533,9 +533,9 @@ kern_return_t init_offsets() {
             OFFSET_ROOT_MOUNT_V_NODE               =0xfffffff0075ec0b0;
         }
     }
-    //iPad Mini 3
+    //iPad Mini 3 & iPad Air (1st gen)
     
-    else if (strcmp(u.machine, "iPad4,7") == 0 || strcmp(u.machine, "iPad4,8") == 0 || strcmp(u.machine, "iPad4,9") == 0) {
+    else if (strcmp(u.machine, "iPad4,1") == 0 || strcmp(u.machine, "iPad4,2") == 0 || strcmp(u.machine, "iPad4,7") == 0 || strcmp(u.machine, "iPad4,8") == 0 || strcmp(u.machine, "iPad4,9") == 0) {
         if ([ver isEqual: @"Version 10.3 (Build 14E277)"])
         {
             OFFSET_ZONE_MAP                        =0xfffffff00754c478;
